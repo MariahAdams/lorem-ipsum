@@ -1,13 +1,18 @@
 <template>
   <section>
     Ipsums component
+    <IpsumsList />
   </section>
 </template>
 
 <script>
-export default {
+import IpsumsList from './IpsumsList';
 
-}
+export default {
+  components: {
+    IpsumsList
+  }
+};
 </script>
 
 <style>
