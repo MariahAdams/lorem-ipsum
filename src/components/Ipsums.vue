@@ -1,8 +1,11 @@
 <template>
   <section>
     Behold your choices:
-    <Ipsum />
-    <IpsumsList :ipsums="ipsums"/>
+    <Ipsum :ipsum="selected"/>
+    <IpsumsList 
+      :ipsums="ipsums"
+      :onSelect="handleSelect"
+    />
   </section>
 </template>
 
@@ -14,16 +17,25 @@ import ipsumsApi from '../services/ipsumsApi';
 export default {
   data() {
     return {
-      ipsums: ipsumsApi.getAll()
+      ipsums: ipsumsApi.getAll(),
+      selected: null
     };
   },
   components: {
     IpsumsList,
     Ipsum
+  },
+  methods: {
+    handleSelect(ipsum) {
+      this.selected = ipsum;
+      console.log('You have selected ', ipsum.title);
+    }
   }
 };
 </script>
 
 <style>
-
+section {
+  margin: 20px;
+}
 </style>
