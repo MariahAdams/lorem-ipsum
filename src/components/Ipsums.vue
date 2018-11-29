@@ -1,12 +1,14 @@
 <template>
   <section>
     Behold your choices:
+    <Ipsum />
     <IpsumsList :ipsums="ipsums"/>
   </section>
 </template>
 
 <script>
 import IpsumsList from './IpsumsList';
+import Ipsum from './Ipsum';
 import ipsumsApi from '../services/ipsumsApi';
 
 export default {
@@ -16,7 +18,8 @@ export default {
     };
   },
   components: {
-    IpsumsList
+    IpsumsList,
+    Ipsum
   }
 };
 </script>
