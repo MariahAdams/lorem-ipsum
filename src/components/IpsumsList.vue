@@ -1,15 +1,21 @@
 <template>
   <ul>
-    IpsumsList Component
+    <IpsumItem />
   </ul>
 </template>
 
 <script>
-export default {
+import IpsumItem from './IpsumItem';
 
+export default {
+  components: {
+    IpsumItem
+  }
 };
 </script>
 
 <style>
-
+ul {
+  list-style: none;
+}
 </style>

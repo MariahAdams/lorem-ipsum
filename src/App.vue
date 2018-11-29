@@ -1,6 +1,9 @@
 <template>
   <div id="app">
-    Hello World
+    <header>
+      <h1>Lorem Ipsum Master Detail - TA</h1>
+    </header>
+
     <Ipsums />
   </div>
 </template>

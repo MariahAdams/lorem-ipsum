@@ -1,6 +1,6 @@
 <template>
   <section>
-    Ipsums component
+    Behold your choices:
     <IpsumsList />
   </section>
 </template>
