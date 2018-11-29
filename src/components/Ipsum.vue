@@ -1,12 +1,17 @@
 <template>
   <section>
     Ipsum Component
+    <IpsumDetail />
   </section>
 </template>
 
 <script>
-export default {
+import IpsumDetail from './IpsumDetail';
 
+export default {
+  components: {
+    IpsumDetail
+  }
 };
 </script>
 
