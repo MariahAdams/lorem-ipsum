@@ -1,8 +1,7 @@
 <template>
   <section>
     Behold your choices:
-    <IpsumsList />
-    {{ipsums}}
+    <IpsumsList :ipsums="ipsums"/>
   </section>
 </template>
 

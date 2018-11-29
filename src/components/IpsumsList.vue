@@ -8,6 +8,9 @@
 import IpsumItem from './IpsumItem';
 
 export default {
+  props: {
+    ipsums: Array
+  },
   components: {
     IpsumItem
   }
