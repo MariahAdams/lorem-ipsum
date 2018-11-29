@@ -1,14 +1,16 @@
 <template>
   <div id="app">
     Hello World
+    <Ipsums />
   </div>
 </template>
 
 <script>
+import Ipsums from './components/Ipsums';
 
 export default {
   components: {
-    
+    Ipsums
   }
 };
 </script>
